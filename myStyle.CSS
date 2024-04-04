@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h2   {
+     background-color: rgba(246, 249, 249, 0.998);
+     color: bisque;
+     font-style: normal;
+     font-family: 'Times New Roman', Times, serif;
+}
+.header {
+    background-color: #030108;
+    color: #f00606;
+    padding: 10px;
+    text-align: center;
+}
+.main {
+    margin: 15px;
+}
+.day {
+    margin-bottom: 10px;
+}
