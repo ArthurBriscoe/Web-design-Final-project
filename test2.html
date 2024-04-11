@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="../myScript.js"></script>
 	<title>Powerbuilding Split</title>
+	<link rel="stylesheet" type="text/css" href="../myStyle.CSS">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
@@ -9,8 +11,8 @@
 			padding: 0;
 		}
 		h2   {
-			 background-color: rgba(246, 249, 249, 0.998);
-			 color: bisque;
+			 background-color: rgba(244, 250, 244, 0.998);
+			 color: rgb(232, 229, 225);
 			 font-style: normal;
 			 font-family: 'Times New Roman', Times, serif;
 		}
@@ -26,12 +28,16 @@
 		.day {
 			margin-bottom: 10px;
 		}
+		
 	</style>
 </head>
 <body>
 	<div class="header">
 		<h1>Powerbuilding Split</h1>
-		
+		<div class="search-container">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="button">Search</button>
+		  </div>
 	
 		
 		</div>		
@@ -96,3 +102,27 @@
 	</div>
 </body>
 </html>
+<script>
+	function searchFunction() {
+		var searchTerm = document.getElementById("search").value;
+		switch(searchTerm) {
+			case "monday":
+				window.location.href = "monday.html";
+				break;
+			case "tuesday":
+				window.location.href = "tuesday.html";
+				break;
+			case "wednesday":
+				window.location.href = "wednesday.html";
+				break;
+			case "thursday":
+				window.location.href = "thursday.html";
+				break;
+			case "friday":
+				window.location.href = "friday.html";
+				break;
+			default:
+				alert("No results found.");
+		}
+	}
+</script>
